@@ -218,7 +218,7 @@ nav ul li {
 
 .image-container {
   position: fixed;
-  top: 5%;
+  top: 0%;
   height: 70%;
 }
 
@@ -231,6 +231,7 @@ nav ul li {
 .content {
   margin: 0 auto;
   padding: 15px;
+  text-align: justify;
 }
 
 .image-wrapper {
