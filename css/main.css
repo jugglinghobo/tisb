@@ -28,6 +28,15 @@ html {
   font-size: 1em;
   line-height: 1.4;
   height: 100%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+a {
+  box-sizing: initial;
 }
 
 /*
@@ -115,48 +124,87 @@ Author's custom styles
 /* LAYOUT */
 body {
   font-family: 'voltemedium';
-  width: 90%;
+  width: 100%;
   margin: 0 auto 5%;
 }
 
 header {
-  margin: 2% 25% 0;
-  padding: 0;
-  text-align: center;
+  margin: 0 auto;
+  text-align: right;
+  background-color: #E30E13;
 }
 
 /* NAVIGATION */
+
+.cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.logo-mobile-container {
+  text-align: left;
+  width: 40%;
+  padding: 20px;
+}
+
+#toggle-navigation-label {
+  padding-right: 15px;
+  font-size: 2em;
+  text-align: right;
+}
+
+#toggle-navigation {
+  display: none;
+}
+
+#navigation {
+  display: none;
+}
+
+#toggle-navigation:checked ~ #navigation {
+  display: block;
+}
+
 .nav-wrapper {
-  padding: 15px;
+  text-align: center;
+  padding: 0 15px;
+  background: white;
 }
 
 .nav {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 .nav-item {
-  display: inline-block;
-  margin: 5%;
-  padding: 0 2%;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
   border-bottom: 2px solid #E30E13;
 }
 
+.nav-item a {
+  width: 100%;
+  display: block;
+}
+
 /* CONTENT */
-.left-column {
+#column-left {
+  display: none;
   width: 25%;
   height: 100%;
   background-color: #E30E13;
 }
 
-.right-column {
+#column-right {
   width: 25%;
 }
 
 .container {
+  width: 90%;
   height: 100%;
-  top: 5%;
+  margin: 5% auto;
 }
 
 .column {
@@ -165,13 +213,13 @@ header {
   vertical-align: top;
 }
 
-.center-column {
-  width: 50%;
+#column-center {
+  width: 100%;
 }
 
 .content {
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 3%;
   text-align: justify;
 }
 
@@ -183,11 +231,6 @@ header {
   width: 22.5%;
   height: 100%;
   margin: 0 auto;
-}
-
-.logo {
-  max-width: 100%;
-  max-height: 100%;
 }
 
 .image-wrapper {
@@ -207,10 +250,11 @@ header {
 }
 
 .passphoto {
-  width: 210px
+  width: 40%;
 }
 
-.img {
+img {
+  margin: 0 auto;
   max-width: 100%;
   max-height: 100%;
 }
@@ -289,18 +333,77 @@ Helper classes
   clear: both;
 }
 
-/* ==========================================================================
-EXAMPLE Media Queries for Responsive Design.
-These examples override the primary ('mobile first') styles.
-Modify as content requires.
-========================================================================== */
+@media only screen and (min-width: 28em) {
 
-@media only screen and (min-width: 35em) {
+  .mobile-only {
+    display: none;
+  }
+
+  #toggle-navigation-label {
+    display: none;
+  }
+
+  #navigation {
+    display: block;
+  }
+
+  .nav-item {
+    width: initial;
+    margin: 5%;
+    padding: 5% 2% 0;
+    display: inline-block;
+  }
+
+  .container {
+    margin-top: 0;
+  }
 
   .logo-container {
     display: block;
   }
-  /* Style adjustments for viewports that meet the condition */
+
+  #column-left {
+    display: table-cell;
+  }
+
+
+}
+
+/* MEDIUM */
+@media only screen and (min-width: 28em) and (max-width: 60em) {
+
+  header {
+    width: 75%;
+    margin: 0 0 0 25%;
+    background-color: transparent;
+  }
+
+  #column-center {
+    width: 75%;
+  }
+
+  #column-right {
+    display: none;
+  }
+
+}
+
+/* LARGE */
+@media only screen and (min-width: 60em) {
+
+  header {
+    width: 50%;
+    background-color: transparent;
+  }
+
+  #column-center {
+    width: 50%;
+  }
+
+  #column-right {
+    display: table-cell;
+  }
+
 }
 
 @media print,
