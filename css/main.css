@@ -10,35 +10,8 @@
 Base styles: opinionated defaults
 ========================================================================== */
 
- /* BOLD */
-/* @font-face { */
-/*   font-family: 'volte-boldbold'; */
-/*   src: url('volte-bold-webfont.eot'); */
-/*   src: url('volte-bold-webfont.eot?#iefix') format('embedded-opentype'), */
-/*   url('volte-bold-webfont.woff2') format('woff2'), */
-/*   url('volte-bold-webfont.woff') format('woff'), */
-/*   url('volte-bold-webfont.ttf') format('truetype'), */
-/*   url('volte-bold-webfont.svg#volte-boldbold') format('svg'); */
-/*   font-weight: normal; */
-/*   font-style: normal; */
-
-/* } */
-
-/* LIGHT */
-/* @font-face { */
-/*   font-family: 'voltelight'; */
-/*   src: url('volte-light-webfont.eot'); */
-/*   src: url('volte-light-webfont.eot?#iefix') format('embedded-opentype'), */
-/*   url('volte-light-webfont.woff2') format('woff2'), */
-/*   url('volte-light-webfont.woff') format('woff'), */
-/*   url('volte-light-webfont.ttf') format('truetype'), */
-/*   url('volte-light-webfont.svg#voltelight') format('svg'); */
-/*   font-weight: normal; */
-/*   font-style: normal; */
-
-/* } */
-
 /* MEDIUM */
+/* additional styles at bottom */
 @font-face {
   font-family: 'voltemedium';
   src: url('../fonts/volte-medium-webfont.eot');
@@ -50,33 +23,6 @@ Base styles: opinionated defaults
   font-weight: normal;
   font-style: normal;
 }
-
-/* REGULAR */
-/* @font-face { */
-/*   font-family: 'volte-regularregular'; */
-/*   src: url('/fonts/volte-regular-webfont.eot'); */
-/*   src: url('/fonts/volte-regular-webfont.eot?#iefix') format('embedded-opentype'), */
-/*   url('/fonts/volte-regular-webfont.woff2') format('woff2'), */
-/*   url('/fonts/volte-regular-webfont.woff') format('woff'), */
-/*   url('/fonts/volte-regular-webfont.ttf') format('truetype'), */
-/*   url('/fonts/volte-regular-webfont.svg#volte-regularregular') format('svg'); */
-/*   font-weight: normal; */
-/*   font-style: normal; */
-/* } */
-
-/* SEMI BOLD */
-/* @font-face { */
-/*   font-family: 'voltesemibold'; */
-/*   src: url('volte-semibold-webfont.eot'); */
-/*   src: url('volte-semibold-webfont.eot?#iefix') format('embedded-opentype'), */
-/*   url('volte-semibold-webfont.woff2') format('woff2'), */
-/*   url('volte-semibold-webfont.woff') format('woff'), */
-/*   url('volte-semibold-webfont.ttf') format('truetype'), */
-/*   url('volte-semibold-webfont.svg#voltesemibold') format('svg'); */
-/*   font-weight: normal; */
-/*   font-style: normal; */
-
-/* } */
 
 html {
   font-size: 1em;
@@ -105,11 +51,6 @@ html {
 /*
  * A better looking default horizontal rule
  */
-
-p {
-  margin: 0;
-  padding: 0;
-}
 
 hr {
   width: 100%;
@@ -146,6 +87,14 @@ fieldset {
   padding: 0;
 }
 
+
+
+/* No styles for paragraphs */
+p {
+  margin: 0;
+  padding: 0;
+}
+
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -163,10 +112,11 @@ a {
 Author's custom styles
 ========================================================================== */
 
+/* LAYOUT */
 body {
   font-family: 'voltemedium';
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 5%;
 }
 
 header {
@@ -175,23 +125,34 @@ header {
   text-align: center;
 }
 
+/* NAVIGATION */
 .nav-wrapper {
   padding: 15px;
 }
 
-nav ul {
+.nav {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-nav ul li {
+.nav-item {
   display: inline-block;
   margin: 5%;
   padding: 0 2%;
   border-bottom: 2px solid #E30E13;
 }
 
+/* CONTENT */
+.left-column {
+  width: 25%;
+  height: 100%;
+  background-color: #E30E13;
+}
+
+.right-column {
+  width: 25%;
+}
 
 .container {
   height: 100%;
@@ -200,40 +161,33 @@ nav ul li {
 
 .column {
   height: 100%;
-  display: inline-block;
+  display: table-cell;
   vertical-align: top;
-}
-
-.left-column {
-  width: 25%;
-  height: 100%;
 }
 
 .center-column {
   width: 50%;
 }
 
-.right-column {
-  width: 25%;
-}
-
-.image-container {
-  position: fixed;
-  max-height: 100%;
-  max-width: 100%;
-  height: 70%;
-}
-
-.img {
-  max-width: 100%;
-  max-height: 100%;
-  /* position: absolute; */
-}
-
 .content {
   margin: 0 auto;
   padding: 0 15px;
   text-align: justify;
+}
+
+/* IMAGES */
+.logo-container {
+  display: none;
+  position: fixed;
+  /*90% of 25% column width*/
+  width: 22.5%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .image-wrapper {
@@ -254,6 +208,11 @@ nav ul li {
 
 .passphoto {
   width: 210px
+}
+
+.img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /* ==========================================================================
@@ -337,6 +296,10 @@ Modify as content requires.
 ========================================================================== */
 
 @media only screen and (min-width: 35em) {
+
+  .logo-container {
+    display: block;
+  }
   /* Style adjustments for viewports that meet the condition */
 }
 
@@ -345,6 +308,13 @@ Modify as content requires.
 (min-resolution: 1.25dppx),
 (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
+  .left-column, .right-column {
+    width: 0;
+  }
+
+  .center-column {
+    width: 100%;
+  }
 }
 
 /* ==========================================================================
@@ -422,4 +392,59 @@ h2,
 h3 {
   page-break-after: avoid;
 }
-}
+
+ /* BOLD */
+/* @font-face { */
+/*   font-family: 'volte-boldbold'; */
+/*   src: url('volte-bold-webfont.eot'); */
+/*   src: url('volte-bold-webfont.eot?#iefix') format('embedded-opentype'), */
+/*   url('volte-bold-webfont.woff2') format('woff2'), */
+/*   url('volte-bold-webfont.woff') format('woff'), */
+/*   url('volte-bold-webfont.ttf') format('truetype'), */
+/*   url('volte-bold-webfont.svg#volte-boldbold') format('svg'); */
+/*   font-weight: normal; */
+/*   font-style: normal; */
+
+/* } */
+
+/* LIGHT */
+/* @font-face { */
+/*   font-family: 'voltelight'; */
+/*   src: url('volte-light-webfont.eot'); */
+/*   src: url('volte-light-webfont.eot?#iefix') format('embedded-opentype'), */
+/*   url('volte-light-webfont.woff2') format('woff2'), */
+/*   url('volte-light-webfont.woff') format('woff'), */
+/*   url('volte-light-webfont.ttf') format('truetype'), */
+/*   url('volte-light-webfont.svg#voltelight') format('svg'); */
+/*   font-weight: normal; */
+/*   font-style: normal; */
+
+/* } */
+
+/* REGULAR */
+/* @font-face { */
+/*   font-family: 'volte-regularregular'; */
+/*   src: url('/fonts/volte-regular-webfont.eot'); */
+/*   src: url('/fonts/volte-regular-webfont.eot?#iefix') format('embedded-opentype'), */
+/*   url('/fonts/volte-regular-webfont.woff2') format('woff2'), */
+/*   url('/fonts/volte-regular-webfont.woff') format('woff'), */
+/*   url('/fonts/volte-regular-webfont.ttf') format('truetype'), */
+/*   url('/fonts/volte-regular-webfont.svg#volte-regularregular') format('svg'); */
+/*   font-weight: normal; */
+/*   font-style: normal; */
+/* } */
+
+/* SEMI BOLD */
+/* @font-face { */
+/*   font-family: 'voltesemibold'; */
+/*   src: url('volte-semibold-webfont.eot'); */
+/*   src: url('volte-semibold-webfont.eot?#iefix') format('embedded-opentype'), */
+/*   url('volte-semibold-webfont.woff2') format('woff2'), */
+/*   url('volte-semibold-webfont.woff') format('woff'), */
+/*   url('volte-semibold-webfont.ttf') format('truetype'), */
+/*   url('volte-semibold-webfont.svg#voltesemibold') format('svg'); */
+/*   font-weight: normal; */
+/*   font-style: normal; */
+
+/* } */
+
