@@ -5,7 +5,7 @@
     <?php include "pages/navigation.html" ?>
     <div class="container">
       <?php include "pages/column_left.html" ?>
-      <?php include "pages/anlagen.html" ?>
+      <?php include "pages/aufbau.html" ?>
     </div>
   </body>
 </html>
