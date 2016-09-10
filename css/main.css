@@ -1,0 +1,19 @@
+.navbar {
+  background-color: transparent;
+  border: none;
+}
+
+.column-left {
+  background-color: red;
+}
+
+.logo-container {
+  display: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.logo-container img {
+  width: 100%;
+  height: 100%;
+}
