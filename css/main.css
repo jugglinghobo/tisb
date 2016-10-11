@@ -1,21 +1,46 @@
-.navbar {
-  background-color: transparent;
-  border: none;
-  font-size: 2rem;
-  /* color: #000; */
+@font-face {
+  font-family: 'voltemedium';
+  src: url('../fonts/volte-medium-webfont.eot');
+  src: url('../fonts/volte-medium-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/volte-medium-webfont.woff2') format('woff2'),
+  url('../fonts/volte-medium-webfont.woff') format('woff'),
+  url('../fonts/volte-medium-webfont.ttf') format('truetype'),
+  url('../fonts/volte-medium-webfont.svg#voltemedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.navbar.center {
+.navbar-brand {
+  padding: 5px;
+  position: absolute;
+  left: 10%;
+}
+
+.navbar-brand img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.navbar-nav.center {
+  width: 100%;
   text-align: center;
 }
 
-.navbar.center .nav {
-  display:inline-block;
+.navbar-nav > li {
   float: none;
+  display: inline-block;
 }
 
-.column-left {
-  background-color: red;
+.navbar-nav > li.active {
+  text-decoration: underline;
+}
+
+.navbar-nav > li > a:hover {
+  text-decoration: underline;
+}
+
+.content img {
+  width: 100%;
 }
 
 .logo-container {

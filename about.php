@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
   <?php include $_SERVER['DOCUMENT_ROOT']."/includes/base.php" ?>
   <?php include "pages/head.html" ?>
   <body>
@@ -8,7 +8,7 @@
     <div class="container">
 
       <div class="row">
-        <?php include "pages/partner.html" ?>
+        <?php include "pages/about.html" ?>
 
       </div><!-- /.row -->
 
