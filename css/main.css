@@ -1,6 +1,17 @@
 .navbar {
   background-color: transparent;
   border: none;
+  font-size: 2rem;
+  /* color: #000; */
+}
+
+.navbar.center {
+  text-align: center;
+}
+
+.navbar.center .nav {
+  display:inline-block;
+  float: none;
 }
 
 .column-left {
