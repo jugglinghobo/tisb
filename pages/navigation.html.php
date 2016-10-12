@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand hidden-xs" href="/">
-        <img src="/img/logo-mobile.png" alt="large tisb logo" />
+        <img src="/img/logos/logo-mobile.png" alt="large tisb logo" />
       </a>
     </div>
     <ul class="nav navbar-nav center">

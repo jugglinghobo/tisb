@@ -387,10 +387,14 @@
     "grid.less",
     "forms.less",
     "responsive-utilities.less",
+    "glyphicons.less",
     "navs.less",
     "navbar.less",
-    "responsive-embed.less"
+    "responsive-embed.less",
+    "carousel.less"
   ],
-  "js": [],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=20fcd64172f78bc6c1f0249a128edcb3"
+  "js": [
+    "carousel.js"
+  ],
+  "customizerUrl": "http://getbootstrap.com/customize/?id=c44549515e753a273fa954fd158a75a2"
 }

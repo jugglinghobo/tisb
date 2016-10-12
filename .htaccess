@@ -1,1 +1,2 @@
-DirectoryIndex about.php
+DirectoryIndex /about.php
+RedirectMatch ^/$ /about.php

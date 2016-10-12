@@ -1,11 +1,5 @@
 <div class="col-sm-3 hidden-xs">
-  <div class="sidebar-module">
-    <div class="logo-container">
-      <a href="/">
-        <img src="img/logo-large-transparent.png" alt="large tisb logo" />
-      </a>
-    </div>
-  </div>
+  <?php include $_SERVER['DOCUMENT_ROOT']."/about/navigation.html.php" ?>
 </div>
 
 <div class="col-sm-6 col-xs-12 blog-main">
@@ -14,9 +8,9 @@
       Wir sind spezialisiert auf die Inbetriebnahme, Instandhaltung und Optimierung von insdustriellen Biomassenanlagen.
     </p>
 
-    <br />
-
-    Wir begleiten den gesamten Lebenszyklus ihrer Anlage.
+    <p>
+      Wir begleiten den gesamten Lebenszyklus ihrer Anlage.
+    </p>
 
     <ul>
       <li class='header'><a href='about/aufbau.php'>Aufbau/Montage</a></li>
@@ -33,6 +27,10 @@
 
       <li class='header'><a href='about/demontage.php'>Demontage</a></li>
     </ul>
+
+    <div class="img-container logo-medium">
+      <img src="/img/logos/logo-medium-transparent.png" alt="TISB Logo transparent" class="img-responsive center-block" />
+    </div>
   </div><!-- /.blog-post -->
 
 </div><!-- /.blog-main -->

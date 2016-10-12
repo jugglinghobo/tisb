@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="de">
-  <?php include "pages/head.html" ?>
+  <?php include $_SERVER['DOCUMENT_ROOT']."/includes/base.php" ?>
+  <?php include $_SERVER['DOCUMENT_ROOT']."/pages/head.html" ?>
   <body>
-    <?php include "pages/navigation.html" ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/pages/navigation.html.php" ?>
 
     <div class="container">
 
       <div class="row">
-        <?php include "pages/reparatur.html" ?>
+        <?php include $_SERVER['DOCUMENT_ROOT']."/pages/reparatur.html.php" ?>
       </div><!-- /.row -->
 
     </div><!-- /.container -->
