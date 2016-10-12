@@ -8,7 +8,7 @@
     <div class="container">
 
       <div class="row">
-        <?php include "pages/anlagen.html" ?>
+        <?php include "pages/partner.html" ?>
 
       </div><!-- /.row -->
 
