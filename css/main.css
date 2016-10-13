@@ -21,10 +21,20 @@ body {
   height: 50px;
 }
 
+.navbar.navbar-default {
+  border-bottom: 0;
+}
+
 .navbar-default .navbar-text {
   color: white;
   text-transform: uppercase;
   font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.navbar-default .navbar-text.contact {
+  color: #333;
+  padding: 0;
 }
 
 .navbar-default .navbar-text small {
@@ -48,6 +58,22 @@ body {
   display: inline-block;
 }
 
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-default .navbar-nav > li.active > a {
+  color: white;
+}
+
+.navbar-default .navbar-nav > li.active:hover > a {
+  color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  color: white;
+}
+
 .navbar-nav > li.active {
   text-decoration: underline;
 }
@@ -65,12 +91,15 @@ body {
   height: 100%;
 }
 
-.img-container.logo-medium {
-  max-height: 300px;
+.header-logo-left {
+  max-height: 200px;
   height: 300px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .img-container img {
   max-width: 100%;
-  height: 100%;
+  max-height: 100%;
 }
