@@ -10,10 +10,27 @@
   font-style: normal;
 }
 
+body {
+  font-family: 'voltemedium';
+}
+
 .navbar-brand {
-  padding: 5px;
-  position: absolute;
-  left: 10%;
+  float: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 50px;
+}
+
+.navbar-default .navbar-text {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-text small {
+  vertical-align: super;
+  font-weight: normal;
+  font-size: 60%;
 }
 
 .navbar-brand img {

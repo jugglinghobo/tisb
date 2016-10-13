@@ -1,10 +1,10 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand hidden-xs" href="/">
-        <img src="/img/logos/logo-mobile.png" alt="large tisb logo" />
-      </a>
-    </div>
+    <p class="navbar-text">
+      Technischer<br>
+      Industrie Service für<br>
+      Biomasseanlagen <small>GmbH</small>
+    </p>
     <ul class="nav navbar-nav center">
       <li <?php echoSelectedClassIfRequestMatches("about") ?>>
         <a href="/about.php">Über Uns</a>

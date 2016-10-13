@@ -27,10 +27,6 @@
 
       <li class='header'><a href='about/demontage.php'>Demontage</a></li>
     </ul>
-
-    <div class="img-container logo-medium">
-      <img src="/img/logos/logo-medium-transparent.png" alt="TISB Logo transparent" class="img-responsive center-block" />
-    </div>
   </div><!-- /.blog-post -->
 
 </div><!-- /.blog-main -->
