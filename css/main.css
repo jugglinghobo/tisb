@@ -25,16 +25,21 @@ body {
   border-bottom: 0;
 }
 
-.navbar-default .navbar-text {
+.navbar-default .navbar-text.logo {
   color: white;
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.navbar-default .navbar-text.contact {
+.navbar-default .navbar-text.contact,
+.navbar-default .navbar-text.contact a {
   color: #333;
   padding: 0;
+}
+
+.navbar-default .navbar-text.contact a {
+  text-decoration: underline;
 }
 
 .navbar-default .navbar-text small {
@@ -93,7 +98,6 @@ body {
 
 .header-logo-left {
   max-height: 200px;
-  height: 300px;
   position: absolute;
   left: 0;
   bottom: 0;

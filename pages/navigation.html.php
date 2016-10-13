@@ -7,7 +7,7 @@
     </div>
     <div class="row">
       <div class="col-md-8 col-md-offset-1">
-        <p class="navbar-text">
+        <p class="navbar-text logo">
           Technischer<br>
           Industrie Service für<br>
           Biomasseanlagen <small>GmbH</small>
@@ -15,10 +15,9 @@
       </div>
       <div class="col-md-3">
         <p class="navbar-text contact hidden-xs hidden-sm">
-          <strong>TISB GmbH</strong><br>
-          Sonnrainstrasse 84<br>
-          3510 Konolfingen<br>
-          +41 79 299 82 28<br>
+          Telefon: +41 79 299 82 28
+          <br>
+          <a href="mailto:raphael.klauser@tisb.ch">raphael.klauser@tisb.ch</a>
         </p>
       </div>
       <div class="row">
