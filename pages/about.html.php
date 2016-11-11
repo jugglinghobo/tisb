@@ -13,28 +13,74 @@
     </p>
 
     <ul>
-      <li class='header'><a href='about/aufbau.php'>Aufbau/Montage</a></li>
+      <li class='header'><a href='#aufbau'>Aufbau/Montage</a></li>
 
-      <li class='header'><a href='about/inbetriebnahme.php'>Inbetriebnahme</a></li>
+      <li class='header'><a href='#inbetriebnahme'>Inbetriebnahme</a></li>
 
-      <li class='header'><a href='about/optimierung.php'>Optimierung</a></li>
+      <li class='header'><a href='#optimierung'>Optimierung</a></li>
 
-      <li class='header'><a href='about/schulung.php'>Schulungen durchführen</a></li>
+      <li class='header'><a href='#schulung'>Schulungen durchführen</a></li>
 
-      <li class='header'><a href='about/instandhaltung.php'>Instandhaltung</a></li>
+      <li class='header'><a href='#instandhaltung'>Instandhaltung</a></li>
 
-      <li class='header'><a href='about/reparatur.php'>Störungen beheben/Reparaturen</a></li>
+      <li class='header'><a href='#reparatur'>Störungen beheben/Reparaturen</a></li>
 
-      <li class='header'><a href='about/demontage.php'>Demontage</a></li>
+      <li class='header'><a href='#demontage'>Demontage</a></li>
     </ul>
 
-    <?php include $_SERVER['DOCUMENT_ROOT']."/pages/aufbau.html.php" ?>
-    <?php include $_SERVER['DOCUMENT_ROOT']."/pages/inbetriebnahme.html.php" ?>
-    <?php include $_SERVER['DOCUMENT_ROOT']."/pages/optimierung.html.php" ?>
-    <?php include $_SERVER['DOCUMENT_ROOT']."/pages/schulung.html.php" ?>
-    <?php include $_SERVER['DOCUMENT_ROOT']."/pages/instandhaltung.html.php" ?>
-    <?php include $_SERVER['DOCUMENT_ROOT']."/pages/reparatur.html.php" ?>
-    <?php include $_SERVER['DOCUMENT_ROOT']."/pages/demontage.html.php" ?>
+    <!-- AUFBAU -->
+    <?php $topic = ['aufbau', 'Aufbau/Montage']; ?>
+    <?php $image_map = [
+      ["einbau_rost_kran_0.jpg", "Einbau mit Kran"],
+      ["einbau_rost_kran_1.jpg", ""],
+      ["einbau_rost_kran_2.jpg", ""],
+      ["einbau_rost_kran_3.jpg", ""],
+      ["einbau_rost_kran_4.jpg", ""],
+      ["rost_horz.jpg", ""],
+    ]; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/shared/page.html.php" ?>
+
+    <!-- INBETRIEBNAHME -->
+    <?php $topic = ['inbetriebnahme', 'Inbetriebnahme']; ?>
+    <?php $image_map = [
+      ["inbetriebnahme_kran_leerung.jpg", "Inbetriebnahme des neuen Ladekrans in ???"],
+      ["kran.jpg", "Inbetriebnahme des neuen Ladekrans in ???"],
+      ["inbetriebnahme_murten.jpg", "Inbetriebnahme des neuen Hydraulikschubbodens in Murten"],
+      ["inbetriebnahme_hydraulikschubboden_murten.jpg", "Inbetriebnahme des neuen Hydraulikschubbodens in Murten"],
+      ["hydraulikschubboden_murten.jpg", "Der neue Hydraulikschubboden"]
+    ]; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/shared/page.html.php"; ?>
+
+
+    <!-- OPTIMIERUNG -->
+    <?php $topic = ["optimierung", "Optimierung"] ?>
+    <?php $image_map = [
+    ]; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/shared/page.html.php"; ?>
+
+    <!-- SCHULUNG -->
+    <?php $topic = ["schulung", "Schulungen durchführen"] ?>
+    <?php $image_map = [
+    ]; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/shared/page.html.php"; ?>
+
+    <!-- INSTANDHALTUNG -->
+    <?php $topic = ["instandhaltung", "Instandhaltung"] ?>
+    <?php $image_map = [
+    ]; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/shared/page.html.php"; ?>
+
+    <!-- REPARATUR -->
+    <?php $topic = ["reparatur", "Störungen beheben/Reparatur"] ?>
+    <?php $image_map = [
+    ]; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/shared/page.html.php"; ?>
+
+    <!-- DEMONTAGE -->
+    <?php $topic = ["demontage", "Demontage"] ?>
+    <?php $image_map = [
+    ]; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/shared/page.html.php"; ?>
   </div><!-- /.blog-post -->
 
 </div><!-- /.blog-main -->

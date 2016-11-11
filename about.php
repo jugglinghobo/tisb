@@ -13,5 +13,7 @@
       </div><!-- /.row -->
 
     </div><!-- /.container -->
+    <footer>
+    </footer>
   </body>
 </html>
