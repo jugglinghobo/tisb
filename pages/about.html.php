@@ -27,6 +27,14 @@
 
       <li class='header'><a href='about/demontage.php'>Demontage</a></li>
     </ul>
+
+    <?php include $_SERVER['DOCUMENT_ROOT']."/pages/aufbau.html.php" ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/pages/inbetriebnahme.html.php" ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/pages/optimierung.html.php" ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/pages/schulung.html.php" ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/pages/instandhaltung.html.php" ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/pages/reparatur.html.php" ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/pages/demontage.html.php" ?>
   </div><!-- /.blog-post -->
 
 </div><!-- /.blog-main -->
