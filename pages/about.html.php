@@ -106,7 +106,7 @@
     <?php $image_map = [
       ["antreffen_schaden.jpg", "Antreffen eines Wasserschadens"],
       ["ursache_suchen.jpg", "Ursache suchen"],
-      ["schaden_beheben.jpg", "Ursache beheben"],
+      ["schaden_beheben.jpg", "Schaden beheben"],
       ["reparatur_spezialhydraulik.jpg", "Reparatur einer Spezialhydraulikanlage"],
       ["reparatur_kessel.jpg", "Reparatur nach Kalkkorrosion in luftiger Höhe"],
       ["schweissnaht_nach_reparatur.jpg", "Schweissnaht nach der Reparatur"],
@@ -120,13 +120,12 @@
     <!-- DEMONTAGE -->
     <?php $topic = ["demontage", "Demontage"] ?>
     <?php $image_map = [
+      ["abgenutzt_defekter_schubboden.jpg", "Abgenutzter, defekter Schubboden"],
+      ["schubstangen_bereit_fuer_abtransport.jpg", "Schubstangen bereit für den Abtransport mit Kran"],
       ["demontage_defekter_schubboden.jpg", "Demontage defekter Schubboden"],
       ["nach_demontage_schubboden.jpg", "Nach Demontage Schubboden"],
       ["auswechseln_eines_entaschekettenfoerderers.jpg", "Auswechseln eines Entaschekettenförderers"],
       ["abtransport_kettenfoerderer.jpg", "Der Kettenförderer wird zum Abtransport vorbereitet"],
-      ["schubstangen_bereit_fuer_abtransport.jpg", "Schubstangen bereit für den Abtransport mit Kran"],
-      ["abtransport_entaschekettenfoerderer.jpg", "Der Entaschekettenförderer wird als Teilstück aus dem Heizhaus entfernt"],
-      ["abbau_2.jpg", ""],
     ]; ?>
     <?php include $_SERVER['DOCUMENT_ROOT']."/shared/page.html.php"; ?>
   </div><!-- /.blog-post -->
