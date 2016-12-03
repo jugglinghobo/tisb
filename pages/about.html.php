@@ -17,7 +17,7 @@
 
       <li class='header'><a href='#optimierung'>Optimierung</a></li>
 
-      <li class='header'><a href='#amtsmessungen'>Amtsmessungen begleiten</a></li>
+      <li class='header'><a href='#messung'>Amtsmessungen begleiten</a></li>
 
       <li class='header'><a href='#schulung'>Schulungen durchführen</a></li>
 
@@ -69,12 +69,21 @@
     <?php include $_SERVER['DOCUMENT_ROOT']."/shared/page.html.php"; ?>
 
     <!-- AMTSMESSUNG -->
-    <?php $topic = ["amtsmessung", "Amtsmessung"] ?>
+    <?php $topic = ["messung", "Amtsmessungen"] ?>
     <?php $image_map = [
       ["amtsmessung_werli.jpg", "Amtsmessung eines 2.6 MW Kessels mit Waldschitzel betrieben"],
       ["amtsmessung_altholz_1.jpg", "Amtsmessung einer Altholzanlage"],
       ["amtsmessung_altholz_2.jpg", "Amtsmessung einer Altholzanlage"],
-      ["amtsmessung_altholz_3.jpg", "Amtsmessung einer Altholzanlage"]
+      ["amtsmessung_altholz_3.jpg", "Amtsmessung einer Altholzanlage"],
+      ["messung_altholz_1.jpg", "Messung Altholz"],
+      ["messung_altholz_2.jpg", "Messung Altholz"],
+      ["messung_altholz_3.jpg", "Messung Altholz"],
+      ["messung_altholz_4.jpg", "Messung Altholz"],
+      ["messung_altholz_5.jpg", "Messung Altholz"],
+      ["messgeraet_2.jpg", "Mein Messgerät"],
+      ["messgeraet_3.jpg", "Mein Messgerät"],
+      ["messgeraet_4.jpg", "Mein Messgerät"],
+      ["messgeraet_5.jpg", "Mein Messgerät"]
     ]; ?>
     <?php include $_SERVER['DOCUMENT_ROOT']."/shared/page.html.php"; ?>
 
@@ -97,7 +106,10 @@
     <!-- NEUANFERTIGUNG -->
     <?php $topic = ["neuanfertigung", "Neuanfertigung"] ?>
     <?php $image_map = [
-      ["neuanfertigung_schnecke.jpg", "Speziell auf die Anlage angepasste feuerfeste Rostentascheschnecke"]
+      ["neuanfertigung_schnecke.jpg", "Speziell auf die Anlage angepasste feuerfeste Rostentascheschnecke"],
+      ["kupplung_fraesen.jpg", "Kupplung fräsen"],
+      ["kupplung_bohren.jpg", "Kupplung bohren"],
+      ["kupplung_gebohrt.jpg", "Kupplung fertig gebohrt"]
     ]; ?>
     <?php include $_SERVER['DOCUMENT_ROOT']."/shared/page.html.php"; ?>
 
@@ -126,6 +138,8 @@
       ["nach_demontage_schubboden.jpg", "Nach Demontage Schubboden"],
       ["auswechseln_eines_entaschekettenfoerderers.jpg", "Auswechseln eines Entaschekettenförderers"],
       ["abtransport_kettenfoerderer.jpg", "Der Kettenförderer wird zum Abtransport vorbereitet"],
+      ["demontage_vorher.jpg", "Vorher"],
+      ["demontage_nachher.jpg", "Nachher"]
     ]; ?>
     <?php include $_SERVER['DOCUMENT_ROOT']."/shared/page.html.php"; ?>
   </div><!-- /.blog-post -->
