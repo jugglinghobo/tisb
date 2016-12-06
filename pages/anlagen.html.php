@@ -11,7 +11,7 @@
       <li class='header'><a href='#karlsfeld'>Modernes Heizhaus Karlsfeld DE</a></li>
       <li class='header'><a href='#diverse'>Diverse Fernwärmenetze</a></li>
       <li class='header'><a href='#dampfanlage'>Doppelkessel Dampfanlage</a></li>
-      <li class='header'><a href='#dampfanlage'>Kägiswil</a></li>
+      <li class='header'><a href='#kaegiswil'>Kägiswil</a></li>
       <li class='header'><a href='#ardnamurchan_distillery'>Die Ardnamurchan Distillery</a></li>
     </ul>
 
