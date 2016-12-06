@@ -1,2 +1,3 @@
 DirectoryIndex /about.php
 RedirectMatch ^/$ /about.php
+ErrorDocument 404 /about.php
