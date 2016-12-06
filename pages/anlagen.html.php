@@ -4,15 +4,15 @@
 
 <div class="col-sm-6 col-xs-12 blog-main">
   <div class="blog-post">
-    <h4>Die folgenden Anlagen kennen wir bereits</h4>
+    <h4>Auf folgenden Anlagen waren wir schon zu Besuch</h4>
 
     <ul>
       <li class='header'><a href='#bamberg'>Mälzerei Bamberg</a></li>
-      <li class='header'><a href='#heizhaus'>Modernes Heizhaus</a></li>
+      <li class='header'><a href='#karlsfeld'>Modernes Heizhaus Karlsfeld DE</a></li>
       <li class='header'><a href='#diverse'>Diverse Fernwärmenetze</a></li>
-      <li class='header'><a href='#thermooel'>Thermoöl in Kombination mit Warmwasserkessel</a></li>
       <li class='header'><a href='#dampfanlage'>Doppelkessel Dampfanlage</a></li>
       <li class='header'><a href='#dampfanlage'>Kägiswil</a></li>
+      <li class='header'><a href='#ardnamurchan_distillery'>Die Ardnamurchan Distillery</a></li>
     </ul>
 
     <!-- BAMBERG -->
@@ -23,10 +23,11 @@
     ]; ?>
     <?php include $_SERVER['DOCUMENT_ROOT']."/shared/page.html.php" ?>
 
-    <!-- HEIZHAUS -->
-    <?php $topic = ['heizhaus', 'Modernes Heizhaus']; ?>
+    <!-- KARLSFELD -->
+    <?php $topic = ['karlsfeld', 'Modernes Heizhaus Karlsfeld DE']; ?>
     <?php $image_map = [
-      ["heizhaus.jpg", ""],
+      ["heizhaus_karlsfeld.jpg", "Heizhaus Karlsfeld"],
+      ["thermooel_karlsfeld.jpg", "Thermoöl Kessel mit Warmwasserkessel"],
     ]; ?>
     <?php include $_SERVER['DOCUMENT_ROOT']."/shared/page.html.php" ?>
 
@@ -36,13 +37,6 @@
       ["fernwaermenetz_1.jpg", "Teil eines Wärmenetzes für eine Stadt mit 37'000 Einwohner"],
       ["fernwaermenetz_2.jpg", "Wärmenetz mit 3 Kesseln, 11.8 MW"],
       ["fernwaermenetz_3.jpg", "Wärmenetz mit 3 Kesseln, 6.5 MW"],
-    ]; ?>
-    <?php include $_SERVER['DOCUMENT_ROOT']."/shared/page.html.php" ?>
-
-    <!-- THERMOOEL -->
-    <?php $topic = ['thermooel', 'Thermoöl in Kombination mit Warmwasserkessel']; ?>
-    <?php $image_map = [
-      ["thermooel.jpg", ""],
     ]; ?>
     <?php include $_SERVER['DOCUMENT_ROOT']."/shared/page.html.php" ?>
 
@@ -60,6 +54,15 @@
       ["heizhaus.jpg", "Heizhaus"],
       ["sommerkessel.jpg", "Sommerkessel"],
       ["winterkessel.jpg", "Winterkessel"],
+    ]; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/shared/page.html.php" ?>
+
+    <!-- ARDNAMURCHAN -->
+    <?php $topic = ['ardnamurchan_distillery', 'Die Ardnamurchan Distillery']; ?>
+    <?php $image_map = [
+      ["fass.jpg", "Die Ardnamurchan Distillery in Schottland"],
+      ["destillerie.jpg", "Die Destillerie"],
+      ["brennhaus.jpg", "Das Whiskeybrennhaus"],
     ]; ?>
     <?php include $_SERVER['DOCUMENT_ROOT']."/shared/page.html.php" ?>
   </div><!-- /.blog-post -->

@@ -19,8 +19,6 @@
 
       <li class='header'><a href='#messung'>Amtsmessungen begleiten</a></li>
 
-      <li class='header'><a href='#schulung'>Schulungen durchführen</a></li>
-
       <li class='header'><a href='#instandhaltung'>Instandhaltung</a></li>
 
       <li class='header'><a href='#neuanfertigung'>Neuanfertigung</a></li>
@@ -71,25 +69,16 @@
     <!-- AMTSMESSUNG -->
     <?php $topic = ["messung", "Amtsmessungen"] ?>
     <?php $image_map = [
-      ["amtsmessung_werli.jpg", "Amtsmessung eines 2.6 MW Kessels mit Waldschitzel betrieben"],
-      ["amtsmessung_altholz_1.jpg", "Amtsmessung einer Altholzanlage"],
-      ["amtsmessung_altholz_2.jpg", "Amtsmessung einer Altholzanlage"],
-      ["amtsmessung_altholz_3.jpg", "Amtsmessung einer Altholzanlage"],
-      ["messung_altholz_1.jpg", "Messung Altholz"],
-      ["messung_altholz_2.jpg", "Messung Altholz"],
-      ["messung_altholz_3.jpg", "Messung Altholz"],
-      ["messung_altholz_4.jpg", "Messung Altholz"],
-      ["messung_altholz_5.jpg", "Messung Altholz"],
-      ["messgeraet_2.jpg", "Mein Messgerät"],
-      ["messgeraet_3.jpg", "Mein Messgerät"],
-      ["messgeraet_4.jpg", "Mein Messgerät"],
-      ["messgeraet_5.jpg", "Mein Messgerät"]
-    ]; ?>
-    <?php include $_SERVER['DOCUMENT_ROOT']."/shared/page.html.php"; ?>
-
-    <!-- SCHULUNG -->
-    <?php $topic = ["schulung", "Schulungen durchführen"] ?>
-    <?php $image_map = [
+      ["amtsmessung_werli.jpg", "Amtsmessung eines 2.6 MW Kessels, mit Waldschitzel betrieben"],
+      ["amtsmessung_altholz_2.jpg", "Amtsmessung einer Altholzanlage mit dem BECO Bern (Kanton)"],
+      ["amtsmessung_altholz_3.jpg", "Messfahrzeug des BECO des Kantons Bern vor einem 2 MW Heizkessel"],
+      ["messung_altholz_1.jpg", "Messwagen der Messfirma Mess-bar"],
+      ["messung_altholz_2.jpg", "Verschlauchung zum Absaugen für die Gas- und Staubmessung"],
+      ["messung_altholz_3.jpg", "Messung mit einer spezial-Titansonde"],
+      ["messung_altholz_4.jpg", "Gasförmige Schwermetalle werden abgesogen für das Labor"],
+      ["messgeraet_5.jpg", "Das Messgerät der TISB ist mit einer beheizten Leitung für Langzeitmessungen ausgelegt"],
+      ["messung_altholz_5.jpg", "Optimierung einer Anlage mit dem Messgerät der TISB"],
+      ["messgeraet_4.jpg", "Die Daten können ganz modern kabelllos auf einem dezentral plazierten Laptop gespeichert werden"]
     ]; ?>
     <?php include $_SERVER['DOCUMENT_ROOT']."/shared/page.html.php"; ?>
 
@@ -97,9 +86,11 @@
     <?php $topic = ["instandhaltung", "Instandhaltung"] ?>
     <?php $image_map = [
       ["instandhaltung_chaux_de_finds.jpg", "Instandhaltung eines 6.5 MW Heisswasserkessels"],
-      ["instandhaltung_kran.jpg", "Wir können auch mit grossen Teleskopladern in engen Situationen umgehen"],
+      ["instandhaltung_kran.jpg", "Kein Platz zu eng, keine Maschine zu gross!<br>Wir machen alles möglich!"],
+      ["einschubschnecke.jpg", "Ausbau einer defekten Einschubschnecke durch die Brennkammer"],
       ["instandhaltung_mawera_chaux_de_fonds.jpg", "Instandhaltung einer Spezialholzfeuerung mit Heissgaskanal und stehendem Kessel"],
       ["instandhaltung_grosse_dreikesselanlage.jpg", "Instandhaltung einer grossen Dreikesselanlage mit Ausbaupotential"],
+      ["mawera.jpg", "Unterhalt an einer Drefachkesselanlage"],
     ]; ?>
     <?php include $_SERVER['DOCUMENT_ROOT']."/shared/page.html.php"; ?>
 
@@ -107,9 +98,11 @@
     <?php $topic = ["neuanfertigung", "Neuanfertigung"] ?>
     <?php $image_map = [
       ["neuanfertigung_schnecke.jpg", "Speziell auf die Anlage angepasste feuerfeste Rostentascheschnecke"],
-      ["kupplung_fraesen.jpg", "Kupplung fräsen"],
+      ["kupplung_fraesen.jpg", "Welle abdrehen auf Innendurchmesser des Trägerrohrs der Schnecke"],
       ["kupplung_bohren.jpg", "Kupplung bohren"],
-      ["kupplung_gebohrt.jpg", "Kupplung fertig gebohrt"]
+      ["kupplung_gebohrt.jpg", "Fertig bearbeitete Kupplung"],
+      ["stahleinschubschnecke.jpg", "Stahleinschubschnecke mit feuerfestem Vorderteil"],
+      ["tuerstein.jpg", "Neuanfertigung eines Beton-Türsteins"]
     ]; ?>
     <?php include $_SERVER['DOCUMENT_ROOT']."/shared/page.html.php"; ?>
 
@@ -126,6 +119,9 @@
       ["auswechsel_roststaebe_gross.jpg", "Auswechseln der Roststäbe an einem wenig grösseren Kessel"],
       ["reparatur_rost.jpg", "Kontrolle des gereinigten und reparierten Rostes"],
       ["reparatur_ventilator.jpg", "Auswechseln eines Abgasventilators"],
+      ["mauerung_1.jpg", "Neuaufmauerung einer Brennkammerfront"],
+      ["mauerung_2.jpg", "Inklusive Seitenwände"],
+      ["mauerung_4.jpg", "Neuaufmauerung von Türsturz und Aschekanal"],
     ]; ?>
     <?php include $_SERVER['DOCUMENT_ROOT']."/shared/page.html.php"; ?>
 

@@ -30,6 +30,9 @@
             <li <?php echoSelectedClassIfRequestMatches("anlagen") ?>>
               <a href="/anlagen.php">Anlagen</a>
             </li>
+            <li <?php echoSelectedClassIfRequestMatches("schulungen") ?>>
+              <a href="/schulungen.php">Schulungen</a>
+            </li>
             <li <?php echoSelectedClassIfRequestMatches("kontakt") ?>>
               <a href="/kontakt.php">Kontakt</a>
             </li>
