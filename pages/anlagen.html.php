@@ -4,6 +4,7 @@
 
 <div class="col-sm-6 col-xs-12 blog-main">
   <div class="blog-post">
+    <h4>Die folgenden Anlagen kennen wir bereits</h4>
 
     <ul>
       <li class='header'><a href='#bamberg'>Mälzerei Bamberg</a></li>
@@ -54,7 +55,7 @@
     <?php include $_SERVER['DOCUMENT_ROOT']."/shared/page.html.php" ?>
 
     <!-- KAEGISWIL -->
-    <?php $topic = ['kaegiswil', 'Doppelkessel Kaegiswil']; ?>
+    <?php $topic = ['kaegiswil', 'Doppelkessel Kägiswil']; ?>
     <?php $image_map = [
       ["heizhaus.jpg", "Heizhaus"],
       ["sommerkessel.jpg", "Sommerkessel"],

@@ -114,6 +114,11 @@ footer {
   bottom: 0;
 }
 
+.header-logo-left a {
+  height: 100%;
+  width: 100%;
+}
+
 .img-container img {
   max-width: 100%;
   max-height: 100%;
