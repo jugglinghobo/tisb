@@ -1,6 +1,6 @@
 <?php $carousel_id = "carousel".$identifier; ?>
 
-<div id="<?php echo $carousel_id; ?>" class="carousel slide" data-ride="carousel" data-interval="0">
+<div id="<?php echo $carousel_id; ?>" class="carousel slide lazy" data-ride="carousel" data-interval="0">
   <!-- Indicators (bullet points) -->
   <ol class="carousel-indicators">
     <?php $index = 0; ?>
@@ -21,14 +21,20 @@
       <?php $description = $image_with_description[1]; ?>
       <?php $css_class = "item img-container"; ?>
       <?php if ($image_with_description == $image_map[0]): ?>
-        <?php $css_class = "item active img-container"; ?>
-      <?php endif ?>
-      <div class="<?php echo $css_class; ?>">
-        <img src="<?php echo "/img/". $image; ?>" alt="<?php echo $description; ?>" class="img-responsive center-block">
-        <div class="carousel-caption">
-          <p><?php echo $description; ?></p>
+        <div class="item active img-container">
+          <img src="<?php echo "/img/". $image; ?>" alt="<?php echo $description; ?>" class="img-responsive center-block">
+          <div class="carousel-caption">
+            <p><?php echo $description; ?></p>
+          </div>
         </div>
-      </div>
+      <?php else: ?>
+        <div class="item img-container">
+          <img data-src="<?php echo "/img/". $image; ?>" alt="<?php echo $description; ?>" class="img-responsive center-block">
+          <div class="carousel-caption">
+            <p><?php echo $description; ?></p>
+          </div>
+        </div>
+      <?php endif ?>
     <?php endforeach ?>
 
     <!-- Controls -->
